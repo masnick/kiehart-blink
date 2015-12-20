@@ -28,7 +28,7 @@ get '/' do
   parsed.css(".location")[0].set_attribute("style", "margin-left: 0; padding-left: 0; font-family: 'Gentium Basic',serif;")
 
   # Make Photoshelter font available in widget
-  font_url = "http://fonts.googleapis.com/css?family=Gentium+Basic:400,700|&subset=latin,latin-ext"
+  font_url = "https://fonts.googleapis.com/css?family=Gentium+Basic:400,700|&subset=latin,latin-ext"
   span = Nokogiri::XML::Node.new "link", parsed
   span.set_attribute("rel", "stylesheet")
   span.set_attribute("type", 'text/css')
